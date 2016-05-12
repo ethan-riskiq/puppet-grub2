@@ -172,6 +172,7 @@ class grub2 (
   $install_grub           = $grub2::params::install_grub,
   $package_ensure         = $grub2::params::package_ensure,
   $package_name           = $grub2::params::package_name,
+  $password_md5           = $grub2::params::password_md5,
   $recordfail_timeout     = $grub2::params::recordfail_timeout,
   $save_default           = $grub2::params::save_default,
   $serial_command         = $grub2::params::serial_command,
@@ -204,6 +205,7 @@ class grub2 (
   validate_bool($install_grub)
   validate_string($package_ensure)
   validate_array($package_name)
+  validate_array($password_md5)
   validate_integer($recordfail_timeout)
   validate_bool($save_default)
   validate_string($serial_command)
