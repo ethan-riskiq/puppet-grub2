@@ -5,6 +5,7 @@ GRUB_DEFAULT=<%= @default_entry %>
 GRUB_TIMEOUT=<%= @timeout %>
 <% if @password != nil -%>
 password --md5 <%= @password %>
+<% end -%>
 <% if @hidden_timeout != nil -%>
 GRUB_HIDDEN_TIMEOUT=<%= @hidden_timeout %>
 <% end -%>

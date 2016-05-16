@@ -19,7 +19,7 @@ class grub2::params {
   $hidden_timeout_quiet   = false
   $install_grub           = false
   $package_ensure         = 'present'
-  $password_md5               = ''
+  $password_md5               = '$1$s.lVn$k4oNYLbuIeQoqy1vEDZIL0'
   $recordfail_timeout     = 5
   $save_default           = false
   $serial_command         = ''

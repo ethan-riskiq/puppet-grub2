@@ -205,7 +205,7 @@ class grub2 (
   validate_bool($install_grub)
   validate_string($package_ensure)
   validate_array($package_name)
-  validate_array($password_md5)
+  validate_string($password_md5)
   validate_integer($recordfail_timeout)
   validate_bool($save_default)
   validate_string($serial_command)
